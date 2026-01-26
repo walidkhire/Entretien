@@ -34,35 +34,35 @@ namespace CommandeSystem.Services
                 var logEntry = $"{DateTime.Now:HH:mm:ss.fff} - {message}";
                 await _channel.Writer.WriteAsync(logEntry);
             }
-        
 
-        //public void AddLogQueue(string message)
-        //{
-        //    var logEntry = $"{DateTime.Now:yyyy-MM-dd: HH:mm:ss} - {message}";
-        //    _logsQueue.Enqueue(logEntry);
-        //}
-        //public void LogsPrintQueue()
-        //{
-        //    while ((_logsQueue.Count > 0))
-        //    {
-        //        Console.WriteLine(_logsQueue.Dequeue());
-        //    }
 
-        //}
+        public void AddLogQueue(string message)
+        {
+            var logEntry = $"{DateTime.Now:yyyy-MM-dd: HH:mm:ss} - {message}";
+            _logsQueue.Enqueue(logEntry);
+        }
+        public void LogsPrintQueue()
+        {
+            while ((_logsQueue.Count > 0))
+            {
+                Console.WriteLine(_logsQueue.Dequeue());
+            }
 
-        //public void Log(string message)
-        //{
-        //    var logEntry = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - {message}";
+        }
 
-        //    _logConcurrentQueue.Enqueue(logEntry);
+        public void Log(string message)
+        {
+            var logEntry = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} - {message}";
 
-        //}
-        //public void PrintLogs()
-        //{
-        //    while (_logConcurrentQueue.TryDequeue(out var logMessage))
-        //    {
-        //        Console.WriteLine(logMessage);
-        //    }
-        //}
+            _logConcurrentQueue.Enqueue(logEntry);
+
+        }
+        public void PrintLogs()
+        {
+            while (_logConcurrentQueue.TryDequeue(out var logMessage))
+            {
+                Console.WriteLine(logMessage);
+            }
+        }
     }
 }
