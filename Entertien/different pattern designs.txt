@@ -1,0 +1,29 @@
+| Pattern              | Type         | But / Quand l’utiliser                                                  | Exemple rapide en C#                                           |
+| -------------------- | ------------ | ----------------------------------------------------------------------- | -------------------------------------------------------------- |
+
+| **Singleton**        | Création     | Garantir qu’il n’existe qu’une seule instance d’une classe              | Gestion de configuration, logger.                              |
+
+|**Factory**           | Création     | Créer des objets sans exposer la logique de construction                | `VehiculeFactory` pour créer voiture ou moto selon le type.    |
+
+
+| **Abstract Factory** | Création     | Créer des familles d’objets liés sans spécifier leurs classes concrètes | GUI multiplateforme : boutons Windows ou Mac.                  |
+
+| **Builder**          | Création     | Construire un objet complexe étape par étape                            | Construction d’un objet `Pizza` avec différentes options.      |
+
+| **Prototype**        | Création     | Copier un objet existant sans le reconstruire                           | Cloner des documents ou formulaires.                           |
+
+| **Adapter**          | Structure    | Faire fonctionner des classes incompatibles ensemble                    | Convertir une interface ancienne vers une nouvelle API.        |
+
+| **Decorator**        | Structure    | Ajouter dynamiquement des fonctionnalités à un objet                    | Ajouter des options à une boisson (`Café + Lait + Sucre`).     |
+
+| **Facade**           | Structure    | Simplifier l’accès à un ensemble complexe de classes                    | Une API simplifiée pour accéder à un sous-système complexe.    |
+
+| **Observer**         | Comportement | Notifier automatiquement des objets lorsque l’état d’un autre change    | Notifications, abonnements, événement `PropertyChanged`.       |
+
+| **Strategy**         | Comportement | Changer dynamiquement le comportement d’un objet                        | Algorithmes de tri interchangeable (`TriRapide`, `TriBulles`). |
+
+| **Mediator**         | Comportement | Centraliser la communication entre plusieurs objets                     | Chat entre utilisateurs via un médiateur.                      |
+
+| **Command**          | Comportement | Encapsuler une action sous forme d’objet                                | Undo/Redo, commandes dans une interface graphique.             |
+
+| **Repository**       | Comportement | Accéder aux données tout en séparant la logique de stockage             | CRUD sur une base de données avec Entity Framework.            |

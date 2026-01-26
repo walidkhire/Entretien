@@ -1,0 +1,10 @@
+P001;Stylo bille noir;20;0.90
+P002;Stylo bille bleu;18;0.95
+P003;Gomme blanche;50;0.60
+P004;Surligneur jaune;12;1.50
+P005;Classeur A4;8;2.80
+P006;Feutres couleurs;3;9.99
+P007;Agenda 2025;2;14.90
+P008;Bloc-notes petit;15;1.20
+P009;Calculatrice de poche;4;5.99
+P010;Règle 30 cm;10;0.79

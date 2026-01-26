@@ -1,0 +1,69 @@
+﻿🌟 Bonnes pratiques C#/.NET classées par importance
+
+1️- Respecter les principes SOLID
+
+	- Fondamentaux pour une architecture propre et maintenable.
+
+	- SRP, OCP, LSP, ISP, DIP.
+
+	- Impact direct sur la testabilité et l’évolutivité du code.
+
+
+2- Programmer contre des interfaces, pas des implémentations
+
+	* Rend le code flexible et testable.
+
+
+	* Facilite le remplacement des dépendances et le mock pour les tests unitaires.
+
+	
+3- Écrire du code testable
+	
+	* Séparer les responsabilités.
+
+	* Utiliser l’injection de dépendances.
+
+	* Permet de détecter rapidement les bugs et de sécuriser les modifications futures.
+
+4️-  Gestion des ressources avec using
+
+	*Important pour éviter les fuites mémoire et fermer correctement les fichiers, connexions ou streams.
+
+
+5️- Gestion des exceptions
+
+	* Attraper uniquement ce que tu peux gérer.
+
+	* Logger les exceptions.
+
+	* Éviter les catch génériques non justifiés.
+
+6️- Nommage clair et cohérent
+
+	* Classes, méthodes, propriétés et variables compréhensibles.
+	 
+	* Lisibilité et maintenance améliorées.
+
+7️- Éviter le code dupliqué
+
+	* Réutiliser les méthodes communes.
+
+	* Facilite la maintenance et réduit les erreurs.
+
+8️- Utiliser LINQ pour manipuler les collections
+
+	* Code plus expressif et concis.
+
+	* Moins de risques d’erreurs que les boucles classiques.
+
+9️- Favoriser l’asynchronisme (async/await)
+
+	* Important pour la performance, surtout pour I/O et appels réseau.
+
+	* Plus lisible que Thread ou Task.Run non structuré.
+
+10- Respecter les conventions de code et commentaires intelligents
+
+	* Indentation, espaces, organisation des fichiers.
+
+	* Commentaires qui expliquent le pourquoi, pas le quoi.
