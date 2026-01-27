@@ -1,13 +1,17 @@
-﻿using System;
+﻿using MotProche.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MotProche
+namespace MotProche.Service
 {
     public class SuggestionService : ISuggestionService
     {
+        /// <summary>
+        /// Retourne N suggestions de mots proches du terme donné
+        /// </summary>
         public List<string> GetSuggestions(string terme, List<string> liste, int N)
         {
             terme = terme.ToLower();
@@ -21,7 +25,7 @@ namespace MotProche
                 Condidats.Add((mot, Difference));
 
             }
-
+            //routurn liste des mots tri par différence croissante, longueur relative, ordre alphabétique
             return Condidats
                   .OrderBy(t => t.DiffScore)
                   .ThenBy(t => Math.Abs(terme.Length - t.mot.Length))

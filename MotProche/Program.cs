@@ -1,4 +1,4 @@
-﻿using MotProche;
+﻿using MotProche.Services;
 
 ISuggestionService suggestionService = new SuggestionService();
 List<string> mots = new List<string> { "gros", "gras", "graisse", "agressif", "go", "ros", "gro" };
