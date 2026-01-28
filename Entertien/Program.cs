@@ -99,8 +99,8 @@ namespace Entertien
 
             //2 Strategy
             int[] tab = { 5, 2, 8 };
-            Contexte contexte = new Contexte(new TriRapide());
-            contexte.TrierTableau(tab);
+            //Contexte contexte = new Contexte(new TriRapide());
+          //  contexte.TrierTableau(tab);
 
             //3 Command
             Lumiere lumiere = new Lumiere();

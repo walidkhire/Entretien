@@ -38,9 +38,8 @@ Console.WriteLine("Thread simple terminé.");
 -Pas de contrôle direct (priorité, arrêt, etc.)
 
 📌 Base de nombreux mécanismes modernes*/
-
-ThreadPool threadPool = new ThreadPool();
-threadPool.queueuseworkitem(() =>
+ 
+ThreadPool.QueueUserWorkItem(() =>
 {
     // Code à exécuter dans le thread pool
     Console.WriteLine("ThreadPool en cours d'exécution.");
