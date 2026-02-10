@@ -16,8 +16,8 @@ namespace CommandeSystem.Services
 
 
 
-   
-            public LoggerService()
+
+        public LoggerService()
             {
                 // Démarrage automatique du consommateur
                 Task.Run(async () =>

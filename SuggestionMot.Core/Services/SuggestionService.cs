@@ -1,11 +1,10 @@
-﻿using MotProche.Services;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MotProche.Service
+namespace SuggestionMot.Core.Services
 {
     public class SuggestionService : ISuggestionService
     {
@@ -14,6 +13,15 @@ namespace MotProche.Service
         /// </summary>
         public List<string> GetSuggestions(string terme, List<string> liste, int N)
         {
+            // 🛡️ Guard clauses (sécurité)
+            if (string.IsNullOrWhiteSpace(terme))
+                return new List<string>();
+
+            if (liste == null || liste.Count == 0)
+                return new List<string>();
+
+            if (N <= 0)
+                return new List<string>();
             terme = terme.ToLower();
             var Condidats = new List<(string mot, int DiffScore)>();
             foreach (string mot in liste)

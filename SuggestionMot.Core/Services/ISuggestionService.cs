@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MotProche.Services
+namespace SuggestionMot.Core.Services
 {
     /// <summary>
     /// Interface pour le service de suggestions de mots
